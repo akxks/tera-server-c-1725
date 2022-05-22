@@ -1,0 +1,19 @@
+00:45:14.1430 | AdminEngine: Speed:
+EXCEPTION OCCURRED
+System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at Tera.AdminEngine.AdminCommands.Speed.Process(IConnection connection, String msg) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\AdminEngine\AdminCommands\Speed.cs:line 14
+00:52:29.7046 | AdminEngine: Npc:
+EXCEPTION OCCURRED
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Tera.AdminEngine.AdminCommands.NpcCommand.Process(IConnection connection, String msg) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\AdminEngine\AdminCommands\NpcCommand.cs:line 16
+00:52:59.4399 | AdminEngine: Speed:
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.AdminEngine.AdminCommands.GoTo.Process(IConnection connection, String msg) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\AdminEngine\AdminCommands\GoTo.cs:line 381
+00:53:02.7159 | AdminEngine: Speed:
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.AdminEngine.AdminCommands.GoTo.Process(IConnection connection, String msg) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\AdminEngine\AdminCommands\GoTo.cs:line 381

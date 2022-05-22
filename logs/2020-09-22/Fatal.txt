@@ -1,0 +1,20 @@
+20:28:33.3660 | Can't start server.
+EXCEPTION OCCURRED
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:3306
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at MySql.Data.Common.StreamCreator.CreateSocketStream(IPAddress ip, Boolean unix)
+   at MySql.Data.Common.StreamCreator.GetStream(UInt32 timeout)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Data.DAO.AccountDAO..ctor(String conStr) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Data\DAO\AccountDAO.cs:line 23
+   at Data.DAO.DAOManager.Initialize(String constr) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Data\DAO\DAOManager.cs:line 102
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Communication\Logic\GlobalLogic.cs:line 19
+   at Tera.GameServer.RunServer() in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\GameServer.cs:line 51
+   at Tera.GameServer.Main() in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\GameServer.cs:line 31

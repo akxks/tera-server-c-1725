@@ -1,0 +1,16 @@
+20:42:17.9131 | Cannot connect to MySQL
+EXCEPTION OCCURRED
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:3306
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at MySql.Data.Common.StreamCreator.CreateSocketStream(IPAddress ip, Boolean unix)
+   at MySql.Data.Common.StreamCreator.GetStream(UInt32 timeout)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Data.DAO.DAOManager..ctor(String con) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Data\DAO\DAOManager.cs:line 31

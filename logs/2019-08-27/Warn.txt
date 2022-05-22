@@ -1,0 +1,12 @@
+09:00:09.0223 | Can't write packet: SpAttackEnd
+09:00:09.0263 | ASendPacket
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Network.Server.SpAttackEnd.Write(BinaryWriter writer) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Network\old_Server\SpAttackEnd.cs:line 35
+   at Network.ASendPacket.Send(IConnection state) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Network\ASendPacket.cs:line 59
+09:00:50.6973 | Can't write packet: SpAttackEnd
+09:00:50.6973 | ASendPacket
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Network.Server.SpAttackEnd.Write(BinaryWriter writer) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Network\old_Server\SpAttackEnd.cs:line 35
+   at Network.ASendPacket.Send(IConnection state) in C:\Users\BEAST\Desktop\GAME_SERVER SOURCE CODE\GameServerSource\Network\ASendPacket.cs:line 59
